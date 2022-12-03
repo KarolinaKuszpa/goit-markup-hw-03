@@ -21,6 +21,7 @@ body {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 .studio-black {
     color: var(--black);
 }
@@ -35,6 +36,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--black);
+    display: flex;
 }
 .nav-list :hover {
     color: var(--primary-color);
@@ -43,6 +45,9 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    list-style: none;
+    gap: 93px;
 }
 
 .contacts-list a {
@@ -70,6 +75,7 @@ body {
     line-height: 1.3;
     letter-spacing: 0.06em;
     color: var(--white);
+    text-align: center;
 }
 .dark-bg {
     background-color: var(--dark);
@@ -161,4 +167,63 @@ body {
 }
 .no-underline {
     text-decoration: none;
+}
+.header-wrapper {
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+}
+.container > nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 46px;
+}
+.order > .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles ul {
+    display: flex;
+    justify-content: center;
+}
+.content-section {
+    padding: 94px 30px;
+    outline: 1px;
+}
+
+.content-section h2 {
+    text-align: center;
+}
+.content-section ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.our-team {
+    padding: 94px 30px;
+    outline: 1px;
+}
+.our-team h2 {
+    text-align: center;
+}
+.our-team ul {
+    display: flex;
+    list-style: none;
+}
+.filters {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
 }
