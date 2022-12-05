@@ -8,18 +8,75 @@
     --ash: #757575;
     --light-gray: #f5f4fa;
 }
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+figure {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--white);
+}
+.section {
+    padding: 94px 0;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.3;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-color);
     text-decoration: none;
+}
+.header-wrapper {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.header-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper > .container > nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+}
+.header-wrapper > .container > nav > .nav-list {
+    display: flex;
+    gap: 46px;
+}
+
+.header-wrapper > .container > .contacts-list {
+    display: flex;
+    gap: 50px;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0.15px;
+}
+.container > nav {
+    display: flex;
+    gap: 93px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 46px;
 }
 
 .studio-black {
@@ -36,7 +93,6 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--black);
-    display: flex;
 }
 .nav-list :hover {
     color: var(--primary-color);
@@ -45,9 +101,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: flex;
     list-style: none;
-    gap: 93px;
 }
 
 .contacts-list a {
@@ -59,40 +113,118 @@ body {
 .contacts-list li > a:focus {
     color: var(--primary-color);
 }
-.order button {
-    width: 200px;
-    height: 50px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    outline: none;
-    font-weight: 700;
-}
-.order h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
-    letter-spacing: 0.06em;
-    color: var(--white);
-    text-align: center;
-}
+
 .dark-bg {
     background-color: var(--dark);
+}
+
+.dark-bg .container > .logo {
+    margin-top: 60px;
+}
+.card .team-member {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.card .team-position {
+    margin-bottom: 30px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projects-list {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--anthracite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.card-of-projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #eeeeee;
+}
+.card-of-projects-list .text-style {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.card-of-projects-list .page-signature {
+    margin-bottom: 20px;
+}
+.our-team {
+    outline: 1px;
+    background-color: var(--light-gray);
+    display: flex;
+    list-style: none;
+}
+
+.our-team h2 {
+    text-align: center;
+}
+.our-team ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-top: 50px;
+}
+.articles {
+    outline: 1px;
+    display: flex;
+}
+.articles ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
 .articles h3 {
     font-style: Bold;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.165;
     letter-spacing: 0.03em;
     color: var(--anthracite);
+    margin-top: 0;
 }
+
 .articles p {
+    display: flex;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--ash);
+    margin-top: 10px;
+    gap: 30px;
+}
+.content-section {
+    outline: 1px;
+    display: flex;
+    padding: 94px;
+}
+
+.content-section h2 {
+    text-align: center;
+}
+.content-section ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-top: 50px;
 }
 .team-member {
     font-weight: 500;
@@ -108,14 +240,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--ash);
 }
-
-.projects-list {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--anthracite);
+figcaption {
+    display: flex;
+    flex-direction: column;
 }
+
 .page-signature {
     font-weight: 400;
     font-size: 16px;
@@ -123,9 +252,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--ash);
 }
-
-.our-team {
-    background-color: var(--light-gray);
+.filters {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .filters button {
@@ -136,6 +268,7 @@ body {
     outline: none;
     background-color: var(--light-gray);
     color: var(--black);
+    margin-top: 80px;
 }
 
 .filters button:hover {
@@ -168,62 +301,52 @@ body {
 .no-underline {
     text-decoration: none;
 }
-.header-wrapper {
-    margin: 0 auto;
-}
-
-.container {
-    display: flex;
-    max-width: 1200px;
-}
-.container > nav {
-    display: flex;
-    gap: 93px;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 46px;
-}
 .order > .container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.articles ul {
-    display: flex;
-    justify-content: center;
-}
-.content-section {
-    padding: 94px 30px;
-    outline: 1px;
-}
-
-.content-section h2 {
-    text-align: center;
-}
-.content-section ul {
-    display: flex;
     gap: 30px;
-    list-style: none;
 }
-.our-team {
-    padding: 94px 30px;
-    outline: 1px;
+.order button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 700;
+    margin-bottom: 106px;
 }
-.our-team h2 {
+.order h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    letter-spacing: 0.06em;
+    color: var(--white);
     text-align: center;
+    margin-top: 106px 252px 0;
 }
-.our-team ul {
+
+.dark-bg > .container {
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    margin-left: 121px;
 }
-.filters {
+.dark-bg > .logo {
     display: flex;
-    list-style: none;
-    text-align: center;
-    justify-content: center;
+    margin-top: 60px;
+}
+.address-wrapper {
+    margin-bottom: 67px;
+}
+.address-wrapper span {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.address-wrapper .no-underline {
+    display: flex;
+    margin-top: 9px;
 }

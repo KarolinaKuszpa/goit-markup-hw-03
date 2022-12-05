@@ -20,10 +20,10 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <header class="wrapper">
+        <header class="header-wrapper">
             <div class="container">
                 <nav>
-                    <a class="logo" href="index.html"
+                    <a href="index.html" class="logo"
                         >Web<span class="studio-black">Studio</span></a
                     >
                     <ul class="nav-list">
@@ -44,7 +44,9 @@
                             >info@devstudio.com</a
                         >
                     </li>
-                    <li><a href="tel:48111111111">tel:+48111111111</a></li>
+                    <li>
+                        <a href="tel:48111111111">tel:+48111111111</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -57,22 +59,23 @@
                     <li><button type="button">Dizajn</button></li>
                     <li><button type="button">Marketing</button></li>
                 </ul>
-                <ul class="projects-list">
+                <ul class="projects-list container">
                     <li>
                         <figure>
-                            <img
-                                src="images/technocrack.jpg"
-                                alt="technocrack"
-                                width="370"
-                                height="274"
-                            />
-
-                            <figcaption>
-                                <span class="text-style">Technocrack</span>
-                                <span class="page-signature"
-                                    >Strona internetowa</span
-                                >
-                            </figcaption>
+                            <div class="card-of-projects-list">
+                                <img
+                                    src="images/technocrack.jpg"
+                                    alt="technocrack"
+                                    width="370"
+                                    height="274"
+                                />
+                                <figcaption>
+                                    <span class="text-style">Technocrack</span>
+                                    <span class="page-signature"
+                                        >Strona internetowa</span
+                                    >
+                                </figcaption>
+                            </div>
                         </figure>
                     </li>
                     <li>
@@ -202,24 +205,26 @@
             </div>
         </main>
         <footer class="dark-bg">
-            <a class="logo">Web<span class="studio-white">Studio</span></a>
-            <address class="address-wrapper">
-                <ul>
-                    <li>
-                        <span> m.Warszawa, Aleje Jerozolimskie 21</span>
-                    </li>
-                    <li>
-                        <a href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
-                    </li>
-                    <li>
-                        <a class="no-underline" href="tel:48111111111"
-                            >tel:+48111111111</a
-                        >
-                    </li>
-                </ul>
-            </address>
+            <section class="container">
+                <a class="logo">Web<span class="studio-white">Studio</span></a>
+                <address class="address-wrapper">
+                    <ul>
+                        <li>
+                            <span> m.Warszawa, Aleje Jerozolimskie 21</span>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                        <li>
+                            <a class="no-underline" href="tel:48111111111"
+                                >tel:+48111111111</a
+                            >
+                        </li>
+                    </ul>
+                </address>
+            </section>
         </footer>
     </body>
 </html>
