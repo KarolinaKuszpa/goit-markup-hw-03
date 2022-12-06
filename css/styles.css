@@ -7,6 +7,7 @@
     --anthracite: #212121;
     --ash: #757575;
     --light-gray: #f5f4fa;
+    --light: #eeeeee;
 }
 
 ul,
@@ -65,7 +66,7 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0.15px;
+    padding: 0 15px;
 }
 .container > nav {
     display: flex;
@@ -121,61 +122,47 @@ body {
 .dark-bg .container > .logo {
     margin-top: 60px;
 }
-.card .team-member {
-    margin-top: 30px;
-    margin-bottom: 10px;
+.jobs {
+    margin-top: -94px;
 }
-.card .team-position {
-    margin-bottom: 30px;
-}
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.jobs h2 {
     text-align: center;
-    background-color: white;
-    border: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.projects-list {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--anthracite);
+    font-size: 36px;
+    line-height: 1, 171;
+    letter-spacing: 0, 03em;
+}
+.jobs ul {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 94px;
-}
-
-.card-of-projects-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    border: 1px solid #eeeeee;
-}
-.card-of-projects-list .text-style {
-    margin-top: 20px;
-    margin-bottom: 4px;
-}
-
-.card-of-projects-list .page-signature {
-    margin-bottom: 20px;
-}
-.our-team {
-    outline: 1px;
-    background-color: var(--light-gray);
-    display: flex;
     list-style: none;
+    margin-top: 50px;
+}
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--anthracite);
+}
+.team-position {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--ash);
+}
+
+.our-team {
+    background-color: var(--light-gray);
 }
 
 .our-team h2 {
     text-align: center;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1, 171;
+    letter-spacing: 0, 03em;
 }
 .our-team ul {
     display: flex;
@@ -183,10 +170,21 @@ body {
     list-style: none;
     margin-top: 50px;
 }
-.articles {
-    outline: 1px;
-    display: flex;
+.our-team figure {
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.our-team figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
 .articles ul {
     display: flex;
     gap: 30px;
@@ -211,21 +209,6 @@ body {
     margin-top: 10px;
     gap: 30px;
 }
-.content-section {
-    outline: 1px;
-    display: flex;
-    padding: 94px;
-}
-
-.content-section h2 {
-    text-align: center;
-}
-.content-section ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin-top: 50px;
-}
 .team-member {
     font-weight: 500;
     font-size: 16px;
@@ -243,14 +226,6 @@ body {
 figcaption {
     display: flex;
     flex-direction: column;
-}
-
-.page-signature {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-    color: var(--ash);
 }
 .filters {
     display: flex;
@@ -270,37 +245,85 @@ figcaption {
     color: var(--black);
     margin-top: 80px;
 }
+.projects-list {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--anthracite);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+.projects-list figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 0 20px 24px;
+    border: 1px solid var(--light);
+    border-top: none;
+}
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0, 06em;
+    color: var(--anthracite);
+}
+.project-signature {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 8;
+    letter-spacing: 0, 03em;
+    color: var(--ash);
+}
 
 .filters button:hover {
     color: var(--white);
     background-color: var(--primary-color);
 }
+.page-signature {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--ash);
+}
 
+.footer-wrapper {
+    padding: 60px 0;
+}
 .address-wrapper {
     font-style: normal;
+}
+.address-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
 }
 
 .address-wrapper span {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white);
 }
-
 .address-wrapper a {
     color: var(--gray);
     font-size: 14px;
     line-height: 1.14;
-    text-align: left;
     letter-spacing: 2%;
-}
-
-.address-wrapper a:hover {
-    color: var(--primary-color);
 }
 .no-underline {
     text-decoration: none;
 }
+.address-wrapper a:hover {
+    color: var(--primary-color);
+}
+
 .order > .container {
     display: flex;
     flex-direction: column;
@@ -326,27 +349,5 @@ figcaption {
     letter-spacing: 0.06em;
     color: var(--white);
     text-align: center;
-    margin-top: 106px 252px 0;
-}
-
-.dark-bg > .container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 121px;
-}
-.dark-bg > .logo {
-    display: flex;
-    margin-top: 60px;
-}
-.address-wrapper {
-    margin-bottom: 67px;
-}
-.address-wrapper span {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 9px;
-}
-.address-wrapper .no-underline {
-    display: flex;
-    margin-top: 9px;
+    margin: 106px 252px 0;
 }
